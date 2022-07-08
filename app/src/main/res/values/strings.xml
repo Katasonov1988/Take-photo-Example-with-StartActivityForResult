@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Take Photo</string>
+    <string name="photo_from_gallery">Выбрать фото из галереи</string>
+    <string name="go_to_second_activity">Перейти на второй экран</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="uri">URI из камеры</string>
+    <string name="set_photo">Установить фото</string>
+    <string name="go_to_first_activity">Перейти на первый экран</string>
+    <string name="go_to_third_activity">Перейти на третий экран</string>
+    <string name="back">Назад</string>
+</resources>
