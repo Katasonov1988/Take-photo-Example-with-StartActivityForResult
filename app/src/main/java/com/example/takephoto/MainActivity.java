@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageView = findViewById(R.id.ivFromGallery);
-        Button buttonGoToSecondActivity = findViewById(R.id.buttonGoToFirstActivity);
-        Button button = findViewById(R.id.buttonTakeFromGallery);
 
+        Button buttonGoToSecondActivity = findViewById(R.id.buttonGoToFirstActivity);
         buttonGoToSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button button = findViewById(R.id.buttonTakeFromGallery);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   private void imageChooser() {
+    private void imageChooser() {
         Intent i = new Intent();
         i.setType("image/*");
         i.setAction(Intent.ACTION_GET_CONTENT);
-       startActivityForResult(Intent.createChooser(i, "Select Picture"), SELECT_PICTURE);
+        startActivityForResult(Intent.createChooser(i, "Select Picture"), SELECT_PICTURE);
     }
 
     @Override

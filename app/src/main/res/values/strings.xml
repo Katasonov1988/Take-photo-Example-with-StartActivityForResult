@@ -8,4 +8,5 @@
     <string name="go_to_first_activity">Перейти на первый экран</string>
     <string name="go_to_third_activity">Перейти на третий экран</string>
     <string name="back">Назад</string>
+    <string name="intent_data">data</string>
 </resources>

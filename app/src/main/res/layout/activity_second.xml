@@ -8,32 +8,17 @@
 
     <Button
         android:id="@+id/buttonTakeFromGallery"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/take_photo"
         app:layout_constraintBottom_toTopOf="@id/buttonSetPhoto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979" />
-
-    <TextView
-        android:id="@+id/editTextTextGetUriPhoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/uri"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTakeFromGallery"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewFromCamera"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonSetPhoto"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/set_photo"
         app:layout_constraintBottom_toTopOf="@id/buttonGoToFirstActivity"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,21 +26,19 @@
 
     <ImageView
         android:id="@+id/imageViewFromCamera"
-        android:layout_width="0dp"
-        android:layout_height="400dp"
+        android:layout_width="@dimen/imageLayoutWidth"
+        android:layout_height="@dimen/imageLayoutHeight"
         app:layout_constraintBottom_toTopOf="@+id/buttonTakeFromGallery"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.274"
         tools:ignore="ContentDescription"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/buttonGoToFirstActivity"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/go_to_first_activity"
         app:layout_constraintBottom_toTopOf="@id/buttonGoToThirdActivity"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +46,8 @@
 
     <Button
         android:id="@+id/buttonGoToThirdActivity"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+    android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/go_to_third_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

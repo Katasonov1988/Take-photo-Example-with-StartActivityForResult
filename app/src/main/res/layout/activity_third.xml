@@ -7,31 +7,20 @@
     tools:context=".ThirdActivity">
     <Button
         android:id="@+id/buttonTakeSmallPictureFromCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/take_photo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonGoBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
-
-    <TextView
-        android:id="@+id/thirdEditTextGetUriPhoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/uri"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTakeSmallPictureFromCamera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <ImageView
         android:id="@+id/imageViewSmallViewFromCamera"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/buttonTakeSmallPictureFromCamera"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
@@ -39,8 +28,8 @@
 
     <Button
         android:id="@+id/buttonGoBack"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

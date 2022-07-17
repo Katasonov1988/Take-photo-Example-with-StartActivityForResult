@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonLayoutHeight">70dp</dimen>
+    <dimen name="buttonLayoutWidth">0dp</dimen>
+    <dimen name="imageLayoutHeight">400dp</dimen>
+    <dimen name="imageLayoutWidth">0dp</dimen>
+
+</resources>

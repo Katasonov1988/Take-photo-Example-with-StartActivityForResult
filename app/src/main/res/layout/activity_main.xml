@@ -8,19 +8,17 @@
 
     <Button
         android:id="@+id/buttonTakeFromGallery"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/photo_from_gallery"
         app:layout_constraintBottom_toTopOf="@id/buttonGoToFirstActivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivFromGallery"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/ivFromGallery"
-        android:layout_width="0dp"
-        android:layout_height="400dp"
+        android:layout_width="@dimen/imageLayoutWidth"
+        android:layout_height="@dimen/imageLayoutHeight"
         android:rotation="90"
         app:layout_constraintBottom_toTopOf="@+id/buttonTakeFromGallery"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,8 +29,8 @@
 
     <Button
         android:id="@+id/buttonGoToFirstActivity"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/buttonLayoutWidth"
+        android:layout_height="@dimen/buttonLayoutHeight"
         android:text="@string/go_to_second_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
