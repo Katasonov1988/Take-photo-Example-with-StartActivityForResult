@@ -1,18 +1,13 @@
 package com.example.takephoto;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageView = findViewById(R.id.ivFromGallery);
-        Button buttonGoToSecondActivity = findViewById(R.id.buttonGoToSecondActivity);
-        Button button = findViewById(R.id.buttonTakeFromCamera);
+        Button buttonGoToSecondActivity = findViewById(R.id.buttonGoToFirstActivity);
+        Button button = findViewById(R.id.buttonTakeFromGallery);
 
         buttonGoToSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override

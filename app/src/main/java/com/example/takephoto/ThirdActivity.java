@@ -2,6 +2,9 @@ package com.example.takephoto;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.core.ImageCapture;
+import androidx.camera.core.ImageCaptureException;
+import androidx.camera.lifecycle.ProcessCameraProvider;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -15,7 +18,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+
 public class ThirdActivity extends AppCompatActivity {
+
 
     private ImageView imageViewGetSmallPictureFromCamera;
     private TextView textViewThirdUriFromCamera;
@@ -45,9 +51,11 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dispatchTakePicturesIntent();
+
             }
         });
     }
+
 
     private void dispatchTakePicturesIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

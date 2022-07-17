@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonTakeFromCamera"
+        android:id="@+id/buttonTakeFromGallery"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:text="@string/photo_from_gallery"
-        app:layout_constraintBottom_toTopOf="@id/buttonGoToSecondActivity"
+        app:layout_constraintBottom_toTopOf="@id/buttonGoToFirstActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivFromGallery"
@@ -22,21 +22,20 @@
         android:layout_width="0dp"
         android:layout_height="400dp"
         android:rotation="90"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTakeFromCamera"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTakeFromGallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/buttonGoToSecondActivity"
+        android:id="@+id/buttonGoToFirstActivity"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:text="@string/go_to_second_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
